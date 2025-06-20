@@ -13,3 +13,12 @@ color:#2972b6;
 h2{
 color:#154472;
 }
+a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:visited{
+ color:	#323438;
+
+}
