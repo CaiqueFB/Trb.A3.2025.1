@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    background-color: 	#eeeeee;
+    background-color: #eeeeee;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     margin: 0;
@@ -39,11 +39,10 @@ h2 {
     height: 200px;
     object-fit: cover;
     border-radius: 100%;
-    border: 2px solid 	#85a7ad;
+    border: 2px solid #85a7ad;
     display: block;
     margin: 10px auto 20px auto;
 }
-
 
 a {
     color: #608956;
@@ -65,4 +64,72 @@ ul, ol {
 
 .perfil p, .descricao p {
     line-height: 1.6;
+}
+input[type="text"], textarea {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #2972b6;
+    outline: none;
+    box-shadow: 0 0 5px rgba(41, 114, 182, 0.5);
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: -8px;
+    margin-bottom: 10px;
+    display: none; 
+}
+button#add-uc-btn {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button#add-uc-btn:hover {
+    background-color: #45a049;
+}
+
+.move-up, .move-down {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.move-up:hover, .move-down:hover {
+    background-color: #0056b3;
+}
+
+#uc-cursando li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding-right: 10px;
+}
+
+#uc-cursando li button {
+    flex-shrink: 0; 
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Perfil do Aluno - Fase 02</title>
+    <title>Projeto Perfil do Aluno - Fase 03</title>
     <link rel="shortcut icon" href="imagens/2534182.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,16 +11,18 @@
     <div class="container">
         <header>
             <h1>Projeto Perfil do Aluno</h1>
-      
+        </header>
+
         <section class="perfil">
             <img class="foto-wperfil" src="./Imagens/cqIMG.jpg" alt="Foto de perfil">
             <h1>Caique Augusto Ferreira Braz</h1>
-        </header>
-
             <p><strong>RA:</strong> 15632301605</p>
             <p><strong>Curso:</strong> Sistemas de Informação</p>
             <p><strong>Endereço:</strong> Rua asadkwdjka</p>
-            <p><strong>Email:</strong> s9j923ua@gmail.com</p>
+            <p><strong>Email:</strong> <input type="text" id="email-input" value="s9j923ua@gmail.com"></p>
+            <p id="email-error" class="error-message">Email inválido. Use um formato como exemplo@dominio.com</p>
+            <p><strong>CPF:</strong> <input type="text" id="cpf-input" placeholder="000.000.000-00"></p>
+            <p id="cpf-error" class="error-message">CPF inválido. Use o formato 000.000.000-00</p>
         </section>
 
         <section class="formacao">
@@ -34,15 +36,17 @@
             </ol>
 
             <h2>Atualmente Cursando:</h2>
-            <ul>
-                <li>Projetos e Processos de TI</li>
-                <li>Usabilidade, Desenvolvimento Web, Mobile e Jogos</li>
+            <ul id="uc-cursando">
+                <li>Projetos e Processos de TI <button class="move-up">↑</button><button class="move-down">↓</button></li>
+                <li>Usabilidade, Desenvolvimento Web, Mobile e Jogos <button class="move-up">↑</button><button class="move-down">↓</button></li>
             </ul>
+            <button id="add-uc-btn">Adicionar Novas UCs</button>
         </section>
 
         <section class="descricao">
             <h2>Perfil Pessoal</h2>
             <p>Gosto de praticar artes marciais e academia. Com a rotina de trabalho e estudos, está ficando cada vez mais difícil conciliar os dois.</p>
+            <textarea id="perfil-pessoal-adicional" rows="4" cols="50" placeholder="Adicione mais informações sobre seu perfil pessoal aqui..."></textarea>
 
             <h2>Perfil Acadêmico / Profissional</h2>
             <p>Me chamo Caique, tenho 20 anos e curso Sistemas de Informação no período noturno. Trabalho como freelancer na área de edição de vídeos e estou buscando estágio na área de tecnologia para desenvolver minhas habilidades profissionais.</p>
@@ -61,5 +65,6 @@
             <p><a href="pagina02.html">Ir para a página 2</a></p>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
